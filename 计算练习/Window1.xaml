@@ -9,40 +9,41 @@
     <Grid>
         <TabControl x:Name="tabControl" Margin="10">
             <TabItem Header="二年级上">
-                <Grid Background="#FFE5E5E5" Margin="2,2,2,2.665">
+                <Grid Background="#FFE5E5E5" Margin="2,1,2,3.665">
                     <Label x:Name="label" Content="以内的乘法" Margin="53.867,17.616,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="t1" HorizontalAlignment="Left" Height="23" Margin="153.904,19.034,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="t1" HorizontalAlignment="Left" Height="23" Margin="161.904,19.034,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
                     <TextBox x:Name="s1" HorizontalAlignment="Left" Height="23" Margin="13.992,19.034,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" Width="34.913"/>
                     <Label x:Name="label_Copy" Content="以内的除法" Margin="53.867,61.117,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="t2" HorizontalAlignment="Left" Height="23" Margin="153.904,62.535,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="t2" HorizontalAlignment="Left" Height="23" Margin="161.904,62.535,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
                     <TextBox x:Name="s2" HorizontalAlignment="Left" Height="23" Margin="13.992,62.535,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" Width="34.913"/>
-                    <Label x:Name="label_Copy1" Content="以内加法" HorizontalAlignment="Left" Margin="53.867,103.558,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="t3" HorizontalAlignment="Left" Margin="153.904,104.989,0,0" TextWrapping="Wrap" Text="10" Width="36.392" Height="23.001" VerticalAlignment="Top"/>
-                    <TextBox x:Name="s3" HorizontalAlignment="Left" Margin="13.992,104.989,0,0" TextWrapping="Wrap" Text="100" Width="34.913" Height="23.001" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy1" Content="以内加法" HorizontalAlignment="Left" Margin="53.867,145.558,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t3" HorizontalAlignment="Left" Margin="161.904,146.989,0,0" TextWrapping="Wrap" Text="0" Width="36.392" Height="23.001" VerticalAlignment="Top"/>
+                    <TextBox x:Name="s3" HorizontalAlignment="Left" Margin="13.992,146.989,0,0" TextWrapping="Wrap" Text="100" Width="34.913" Height="23.001" VerticalAlignment="Top"/>
                     <Button x:Name="btn2a" Content="生成" HorizontalAlignment="Left" Margin="61.379,350.384,0,0" VerticalAlignment="Top" Width="190" Click="btn2a_Click" Height="36"/>
-                    <Label x:Name="label_Copy2" Content="以内减法" HorizontalAlignment="Left" Margin="53.867,146.693,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="t4" HorizontalAlignment="Left" Height="23" Margin="153.904,148.111,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="36.392"/>
-                    <TextBox x:Name="s4" HorizontalAlignment="Left" Height="23" Margin="13.992,148.111,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="34.913"/>
-                    <CheckBox x:Name="chkUnCarry" Content="不含进位" HorizontalAlignment="Left" Margin="214.823,108.569,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.205,-0.785" IsChecked="True"/>
-                    <CheckBox x:Name="chkUnBorrow" Content="不含退位" HorizontalAlignment="Left" Margin="214.67,151.693,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.205,-0.785" IsChecked="True"/>
-                    <Label x:Name="label_Copy6" Content="两位数加减个位" HorizontalAlignment="Left" Margin="53.867,186.694,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="label_Copy7" Content="两位数加减整十" HorizontalAlignment="Left" Margin="53.867,226.696,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="t6" HorizontalAlignment="Left" Height="23" Margin="153.904,228.112,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
-                    <TextBox x:Name="t5" HorizontalAlignment="Left" Height="23" Margin="153.904,189.531,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
-                    <Label x:Name="label_Copy8" Content="20以内加减法" HorizontalAlignment="Left" Margin="53.867,264.048,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="t7" HorizontalAlignment="Left" Height="23" Margin="153.904,265.51,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="36.392"/>
-                    <Label x:Name="label_Copy9" Content="易混淆加减法" HorizontalAlignment="Left" Margin="53.867,306.3,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="t8" HorizontalAlignment="Left" Height="23" Margin="153.904,307.763,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="36.392"/>
+                    <Label x:Name="label_Copy2" Content="以内减法" HorizontalAlignment="Left" Margin="53.867,188.693,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t4" HorizontalAlignment="Left" Height="23" Margin="161.904,190.111,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="s4" HorizontalAlignment="Left" Height="23" Margin="13.992,190.111,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="34.913"/>
+                    <CheckBox x:Name="chkUnCarry" Content="不含进位" HorizontalAlignment="Left" Margin="214.823,150.569,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.205,-0.785" IsChecked="True"/>
+                    <CheckBox x:Name="chkUnBorrow" Content="不含退位" HorizontalAlignment="Left" Margin="214.67,193.693,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.205,-0.785" IsChecked="True"/>
+                    <Label x:Name="label_Copy6" Content="两位数加减个位" HorizontalAlignment="Left" Margin="53.867,228.694,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_Copy7" Content="两位数加减整十" HorizontalAlignment="Left" Margin="53.867,268.696,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t6" HorizontalAlignment="Left" Height="23" Margin="161.904,270.112,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="t5" HorizontalAlignment="Left" Height="23" Margin="161.904,231.531,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
+                    <Label x:Name="label_Copy8" Content="20以内加减法" HorizontalAlignment="Left" Margin="53.867,306.048,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t7" HorizontalAlignment="Left" Height="23" Margin="161.904,307.51,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
+                    <Label x:Name="label_Copy9" Content="以内易混淆加减法" HorizontalAlignment="Left" Margin="53.867,102.3,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t8" HorizontalAlignment="Left" Height="23" Margin="161.904,103.763,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="s8" HorizontalAlignment="Left" Height="23" Margin="13.954,102.3,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top" Width="34.913" />
                 </Grid>
             </TabItem>
             <TabItem Header="一年级下">
                 <Grid Background="#FFE5E5E5" Margin="2">
                     <Label x:Name="label_Copy3" Content="20以内加减法" Margin="53.867,60.701,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="txt1bt1" HorizontalAlignment="Left" Height="23" Margin="153.904,62.12,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="txt1bt1" HorizontalAlignment="Left" Height="23" Margin="161.904,62.12,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
                     <Label x:Name="label_Copy4" Content="两位数加减个位" HorizontalAlignment="Left" Margin="53.867,103.765,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt1bt2" HorizontalAlignment="Left" Margin="153.904,105.195,0,0" TextWrapping="Wrap" Text="40" Width="36.392" Height="23" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt1bt2" HorizontalAlignment="Left" Margin="161.904,105.195,0,0" TextWrapping="Wrap" Text="40" Width="36.392" Height="23" VerticalAlignment="Top"/>
                     <Label x:Name="label_Copy5" Content="两位数加减整十" HorizontalAlignment="Left" Margin="53.867,149.075,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="txt1bt3" HorizontalAlignment="Left" Height="23" Margin="153.904,150.494,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <TextBox x:Name="txt1bt3" HorizontalAlignment="Left" Height="23" Margin="161.904,150.494,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
                     <Button x:Name="btn1b" Content="生成" Margin="53.867,193.741,0,0" VerticalAlignment="Top" Click="btn1b_Click" Height="36" HorizontalAlignment="Left" Width="190"/>
                 </Grid>
             </TabItem>

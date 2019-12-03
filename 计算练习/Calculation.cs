@@ -145,6 +145,17 @@ namespace 计算练习
             return n1 + 加 + n2;
         }
 
+        public static string 易混淆加减法(int limit)
+        {
+            if(r.Next(2) == 0)
+                return r.Next(2, limit + 1) + 加 + r.Next(2, limit + 1);
+            else
+            {
+                int n1 = r.Next(2, limit + 1);
+                return n1 * r.Next(2, limit + 1) + 减 + n1;
+            }
+        }
+
         public static string X以内减法(int limit, bool unborrow = false)
         {
             int n1 = r.Next(2, limit + 1);

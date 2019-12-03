@@ -70,6 +70,7 @@ namespace 计算练习
             Calculation.出题(Convert.ToInt16(t5.Text), Calculation.两位数加减个位, result);
             Calculation.出题(Convert.ToInt16(t6.Text), Calculation.两位数加减整十, result);
             Calculation.出题(Convert.ToInt16(t7.Text), Calculation.二十以内加减法, result);
+            Calculation.出题(Convert.ToInt16(t8.Text), Calculation.易混淆加减法, Convert.ToInt16(s8.Text), result);
 
             result = Calculation.RandomSortList<string>(result);
             Export(result, null);

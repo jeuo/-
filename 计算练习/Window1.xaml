@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:计算练习"
         mc:Ignorable="d"
-        Title="计算练习" Height="446" Width="341.868" WindowStartupLocation="CenterScreen">
+        Title="计算练习" Height="487.313" Width="341.868" WindowStartupLocation="CenterScreen">
     <Grid>
         <TabControl x:Name="tabControl" Margin="10">
             <TabItem Header="二年级上">
@@ -19,7 +19,7 @@
                     <Label x:Name="label_Copy1" Content="以内加法" HorizontalAlignment="Left" Margin="53.867,103.558,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="t3" HorizontalAlignment="Left" Margin="153.904,104.989,0,0" TextWrapping="Wrap" Text="10" Width="36.392" Height="23.001" VerticalAlignment="Top"/>
                     <TextBox x:Name="s3" HorizontalAlignment="Left" Margin="13.992,104.989,0,0" TextWrapping="Wrap" Text="100" Width="34.913" Height="23.001" VerticalAlignment="Top"/>
-                    <Button x:Name="btn2a" Content="生成" HorizontalAlignment="Left" Margin="53.867,311.007,0,0" VerticalAlignment="Top" Width="190" Click="btn2a_Click" Height="36"/>
+                    <Button x:Name="btn2a" Content="生成" HorizontalAlignment="Left" Margin="61.379,350.384,0,0" VerticalAlignment="Top" Width="190" Click="btn2a_Click" Height="36"/>
                     <Label x:Name="label_Copy2" Content="以内减法" HorizontalAlignment="Left" Margin="53.867,146.693,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="t4" HorizontalAlignment="Left" Height="23" Margin="153.904,148.111,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="36.392"/>
                     <TextBox x:Name="s4" HorizontalAlignment="Left" Height="23" Margin="13.992,148.111,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="34.913"/>
@@ -31,6 +31,8 @@
                     <TextBox x:Name="t5" HorizontalAlignment="Left" Height="23" Margin="153.904,189.531,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="36.392"/>
                     <Label x:Name="label_Copy8" Content="20以内加减法" HorizontalAlignment="Left" Margin="53.867,264.048,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="t7" HorizontalAlignment="Left" Height="23" Margin="153.904,265.51,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="36.392"/>
+                    <Label x:Name="label_Copy9" Content="易混淆加减法" HorizontalAlignment="Left" Margin="53.867,306.3,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t8" HorizontalAlignment="Left" Height="23" Margin="153.904,307.763,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="36.392"/>
                 </Grid>
             </TabItem>
             <TabItem Header="一年级下">

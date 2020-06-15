@@ -75,5 +75,13 @@ namespace 计算练习
             result = Calculation.RandomSortList<string>(result);
             Export(result, null);
         }
+
+        private void btn2b_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> result = new List<string>();
+            Calculation.出题(Convert.ToInt16(t2b1.Text), Calculation.两位数加减法, result);
+            Calculation.出题(Convert.ToInt16(t2b2.Text), Calculation.二千以内整百加减法, result);
+            Export(result, null);
+        }
     }
 }

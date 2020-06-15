@@ -8,6 +8,15 @@
         Title="计算练习" Height="487.313" Width="341.868" WindowStartupLocation="CenterScreen">
     <Grid>
         <TabControl x:Name="tabControl" Margin="10">
+            <TabItem Header="二年级下">
+                <Grid Background="#FFE5E5E5" Margin="2">
+                    <Label x:Name="label_Copy10" Content="100以内加减法" Margin="53.867,60.701,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="t2b1" HorizontalAlignment="Left" Height="23" Margin="161.904,62.12,0,0" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Width="36.392"/>
+                    <Label x:Name="label_Copy11" Content="整百整千加减法" HorizontalAlignment="Left" Margin="53.867,149.075,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="t2b2" HorizontalAlignment="Left" Height="23" Margin="161.904,150.494,0,0" TextWrapping="Wrap" Text="40" VerticalAlignment="Top" Width="36.392"/>
+                    <Button x:Name="btn2b" Content="生成" Margin="53.867,193.741,0,0" VerticalAlignment="Top" Click="btn2b_Click" Height="36" HorizontalAlignment="Left" Width="190"/>
+                </Grid>
+            </TabItem>
             <TabItem Header="二年级上">
                 <Grid Background="#FFE5E5E5" Margin="2,1,2,3.665">
                     <Label x:Name="label" Content="以内的乘法" Margin="53.867,17.616,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>

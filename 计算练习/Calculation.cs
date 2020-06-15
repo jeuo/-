@@ -18,7 +18,7 @@ namespace 计算练习
             int i = 0;
             while (i++ < count)
             {
-                if(fn != null) result.Add(fn.Invoke());
+                if (fn != null) result.Add(fn.Invoke());
             }
         }
 
@@ -82,7 +82,7 @@ namespace 计算练习
                     n2 = r.Next(2, 10);
                 } while (n1 + n2 >= 10);
                 n1 = r.Next(1, 10) * 10 + n1;
-                if (r.Next(2) == 1) return n1 + "＋" + n2;
+                if (r.Next(2) == 1) return n1 + 加 + n2;
                 else return n2 + 加 + n1;
             }
             else
@@ -121,13 +121,13 @@ namespace 计算练习
 
         public static string X以内乘法(int limit)
         {
-            return r.Next(2,limit+1) + 乘 + r.Next(2, limit + 1);
+            return r.Next(2, limit + 1) + 乘 + r.Next(2, limit + 1);
         }
 
         public static string X以内除法(int limit)
         {
             int n1 = r.Next(2, limit + 1);
-            return n1* r.Next(2, limit + 1) + 除 + n1;
+            return n1 * r.Next(2, limit + 1) + 除 + n1;
         }
 
         public static string X以内加法(int limit, bool uncarry = false)
@@ -147,7 +147,7 @@ namespace 计算练习
 
         public static string 易混淆加减法(int limit)
         {
-            if(r.Next(2) == 0)
+            if (r.Next(2) == 0)
                 return r.Next(2, limit + 1) + 加 + r.Next(2, limit + 1);
             else
             {
@@ -169,6 +169,40 @@ namespace 计算练习
                 }
             }
             return n1 + 减 + n2;
+        }
+
+        public static string 二千以内整百加减法()
+        {
+            int n1, n2;
+            if (r.Next(2) == 1)
+            {
+                do
+                {
+                    n1 = r.Next(1, 20);
+                    n2 = r.Next(2, 20);
+                } while (n1 + n2 > 20);
+                return n1 * 100 + 加 + n2 * 100;
+            }
+            else
+            {
+                n1 = r.Next(3, 21);
+                n2 = r.Next(2, n1);
+                return n1 * 100 + 减 + n2 * 100;
+            }
+        }
+
+        public static string 两位数加减法()
+        {
+            int sum = r.Next(20, 101);
+            int n1 = r.Next(10, sum - 10 + 1);
+            if (r.Next(2) == 1)
+            {
+                return $"{n1} + {sum - n1}";
+            }
+            else
+            {
+                return $"{sum} - {n1}";
+            }
         }
 
         public static bool IsBorrow(int n1, int n2)

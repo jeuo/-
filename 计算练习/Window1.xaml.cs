@@ -27,7 +27,7 @@ namespace 计算练习
 
         public void Export(List<string> result, string path, string title= "计算练习", string filename= "计算练习")
         {
-            path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            if(string.IsNullOrEmpty(path) || !Directory.Exists(path)) path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             StringBuilder sb = new StringBuilder();
             sb.Append($"<html><HEAD><META http-equiv=Content-Type content='text/html; charset=gb2312'></head><body><center><h2>{title}</h2><h3></h3>班级__________ 姓名________ 学号__________<br><br><table border=0 width=640 cellspacing=10>");
             for (int i = 0; i < result.Count; i++)
@@ -82,6 +82,19 @@ namespace 计算练习
             Calculation.出题(Convert.ToInt16(t2b1.Text), Calculation.两位数加减法, result);
             Calculation.出题(Convert.ToInt16(t2b2.Text), Calculation.二千以内整百加减法, result);
             Export(result, null);
+        }
+
+        private void btn3a_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> result1 = new List<string>();
+            Calculation.出题(Convert.ToInt16(t3a1.Text), Calculation.两位数乘以一位数, result1);
+            Calculation.出题(Convert.ToInt16(t3a2.Text), Calculation.两位数除以一位数, result1);
+            result1 = Calculation.RandomSortList<string>(result1);
+            List<string> result2 = new List<string>();
+            Calculation.出题(Convert.ToInt16(t3a3.Text), Calculation.两位数乘除一位加减两位数, result2);
+            Calculation.出题(Convert.ToInt16(t3a4.Text), Calculation.两位数加减两位数乘除一位, result2);
+            result2 = Calculation.RandomSortList<string>(result2);
+            Export(result1.Concat(result2).ToList(), null);
         }
     }
 }

@@ -51,6 +51,24 @@ namespace 计算练习
             return newList;
         }
 
+        public static bool IsBorrow(int n1, int n2)
+        {
+            string s1 = n1.ToString();
+            string s2 = n2.ToString();
+            while (s1.Length > 0 && s2.Length > 0)
+            {
+                if (s1[s1.Length - 1] < s2[s2.Length - 1]) return true;
+                s1 = s1.Remove(s1.Length - 1, 1);
+                s2 = s2.Remove(s2.Length - 1, 1);
+            }
+            return false;
+        }
+
+        public static bool IsCarry(int n1, int n2)
+        {
+            return IsBorrow(n1 + n2, n1);
+        }
+
         public static string 二十以内加减法()
         {
             int n1, n2;
@@ -205,22 +223,97 @@ namespace 计算练习
             }
         }
 
-        public static bool IsBorrow(int n1, int n2)
+        public static string 两位数乘以一位数()
         {
-            string s1 = n1.ToString();
-            string s2 = n2.ToString();
-            while (s1.Length > 0 && s2.Length > 0)
-            {
-                if (s1[s1.Length - 1] < s2[s2.Length - 1]) return true;
-                s1 = s1.Remove(s1.Length - 1, 1);
-                s2 = s2.Remove(s2.Length - 1, 1);
-            }
-            return false;
+            return r.Next(10, 100) + 乘 + r.Next(2, 10);
         }
 
-        public static bool IsCarry(int n1, int n2)
+        public static string 两位数除以一位数()
         {
-            return IsBorrow(n1 + n2, n1);
+            int n1 = r.Next(2, 10), n2;
+            do
+            {
+                n2 = r.Next(2, 50);
+            } while (n1 * n2 >= 100);
+            return n1 * n2 + 除 + n1;
+        }
+
+        public static string 两位数乘除一位加减两位数()
+        {
+            if (r.Next(0, 2) > 0)
+            {
+                //加
+                if (r.Next(0, 2) > 0)
+                {
+                    //乘
+                    return 两位数乘以一位数() + 加 + r.Next(10, 100); 
+                }
+                else
+                {
+                    //除
+                    return 两位数除以一位数() + 加 + r.Next(10, 100);
+                }
+            }
+            else
+            {
+                //减
+                if(r.Next(0, 2) > 0)
+                {
+                    //乘
+                    int n1 = r.Next(10, 100);
+                    int n2 = r.Next(2, 10);
+                    return n1 + 乘 + n2 + 减 + r.Next(10, Math.Min(n1 * n2,100));
+                }
+                else
+                {
+                    //除
+                    int n1 = r.Next(11, 50), n2;
+                    do
+                    {
+                        n2 = r.Next(2, 10);
+                    } while (n1 * n2 > 100);
+                    return n1 * n2 + 除 + n2 + 减 + r.Next(10, n1);
+                }
+            }
+        }
+
+        public static string 两位数加减两位数乘除一位()
+        {
+            if (r.Next(0, 2) > 0)
+            {
+                //加
+                if (r.Next(0, 2) > 0)
+                {
+                    //乘
+                    return r.Next(10, 100) + 加 + 两位数乘以一位数();
+                }
+                else
+                {
+                    //除
+                    return r.Next(10, 100) + 加 + 两位数除以一位数();
+                }
+            }
+            else
+            {
+                //减
+                if (r.Next(0, 2) > 0)
+                {
+                    //乘
+                    int n1 = r.Next(2, 10), n2;
+                    do n2 = r.Next(10, 50); while (n1 * n2 >= 100);
+                    return r.Next(n1 * n2, 100) + 减 +  n1 + 乘 + n2;
+                }
+                else
+                {
+                    //除
+                    int n1 = r.Next(11, 50), n2;
+                    do
+                    {
+                        n2 = r.Next(2, 10);
+                    } while (n1 * n2 > 100);
+                    return r.Next(n1, 100) + 减 + n1 * n2 + 除 + n2;
+                }
+            }
         }
     }
 }
